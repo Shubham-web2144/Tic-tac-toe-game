@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #EEC61D;
+}
+.playerInfo{
+    display: ;
+}
+/*hide game board*/
+.gameBoard{
+    display: none;
+}
+
+/*all main style of boarded */
+.playerInfo,.gameBoard,.result-box{
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 12px 12px;
+    border-radius: 5px;
+}
+.playerInfo .title{
+    position: relative;
+    width: 100%;
+    padding: 8px 10px;
+    border-bottom: 1px solid #EEC61D;
+}
+.playerInfo .title h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #EEC61D;
+}
+.playerInfo .optionBox{
+    position: relative;
+    width: 100%;
+    padding: 14px 10px;
+}
+.playerInfo .optionBox .textC{
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.7px;
+}
+.playerInfo .optionBox .players,.gameBoard .turnBox{
+    width: 100%;
+    padding: 10px 0px;
+}
+.playerInfo .optionBox .players .btn,.gameBoard .turnBox .btn{
+    width: 120px;
+    height: 45px;
+    background: #EEC61D;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 5px;
+    margin: 0px 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+.gameBoard .turnBox{
+    padding-left: 20px;
+}
+.gameBoard .turnBox .btn.active{
+    background: #fff;
+    color: #EEC61D;
+}
+.gameBoard .board{
+    position: relative;
+    width: 200px;
+    min-height: 100px;
+    margin-left: 50px;
+}
+.gameBoard .board .row{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin: 10px; 
+}
+.gameBoard .board .row .inpBox{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2); 
+    margin: 0px 8px;
+    color: #EEC61D;
+    border-radius: 3px; 
+    font-size: 1.9rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+
+.result-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 20px;
+    display: none;
+}
+.result-box .result-txt{
+    width: 100%;
+    padding: 10px 12px;
+    border-bottom: 1px solid #EEC61D;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.result-box .result-txt #res{
+    color: #EEC61D;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.result-box .replay-btn{
+    margin-top: 10px; 
+    margin-left: 105px;
+}
+.result-box .replay-btn .restart{
+    border: none;
+    width: 120px;
+    height: 45px;
+    background: #EEC61D;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.2em;
+    outline: none;
+}
+.result-box .replay-btn .restart:hover{
+    background: #fff;
+    border: 1px solid #EEC61D;
+    color: #EEC61D;
+}
